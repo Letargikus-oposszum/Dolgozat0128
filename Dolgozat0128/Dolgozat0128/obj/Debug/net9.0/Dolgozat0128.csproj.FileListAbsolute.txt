@@ -1,0 +1,15 @@
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\bin\Debug\net9.0\autoparts_orders.json
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\bin\Debug\net9.0\Dolgozat0128.exe
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\bin\Debug\net9.0\Dolgozat0128.deps.json
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\bin\Debug\net9.0\Dolgozat0128.runtimeconfig.json
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\bin\Debug\net9.0\Dolgozat0128.dll
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\bin\Debug\net9.0\Dolgozat0128.pdb
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\obj\Debug\net9.0\Dolgozat0128.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\obj\Debug\net9.0\Dolgozat0128.AssemblyInfoInputs.cache
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\obj\Debug\net9.0\Dolgozat0128.AssemblyInfo.cs
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\obj\Debug\net9.0\Dolgozat0128.csproj.CoreCompileInputs.cache
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\obj\Debug\net9.0\Dolgozat0128.dll
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\obj\Debug\net9.0\refint\Dolgozat0128.dll
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\obj\Debug\net9.0\Dolgozat0128.pdb
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\obj\Debug\net9.0\Dolgozat0128.genruntimeconfig.cache
+C:\Users\b1vidtam\source\repos\Dolgozat0128\Dolgozat0128\obj\Debug\net9.0\ref\Dolgozat0128.dll
