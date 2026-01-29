@@ -50,8 +50,16 @@ namespace Dolgozat0128.Services
                 {
                     orderSummaries.Add(items.customer_id, items.total);
                 }
-                
             }
+            //foreach (var orderSummary in orderSummaries)
+            //{
+            //    Console.WriteLine($"Customer Id: {orderSummaries.Keys}, total: {orderSummaries.Values}");
+            //}
+            var biggestCustomer = orderSummaries.MaxBy(o => o.Value);
+            var customer = customers.Single(c => c.customer_id == biggestCustomer.Key);
+            Console.WriteLine($"Biggest customer Id: {biggestCustomer.Key}, total: {biggestCustomer.Value}");
+            Console.WriteLine($"Biggest customer name: {customer.name}, total: {biggestCustomer.Value}");
+
         }
 
         public void MostSoldProduct(List<Orders> orders, List<Parts> parts)
@@ -69,11 +77,70 @@ namespace Dolgozat0128.Services
         }
         public void AllOfPayment(List<Orders> orders, Summary summary)
         {
-            
+            //cash, credit card, bank transfer, cash on delivery
+            int cashTotal = 0;
+            int creditCardTotal = 0;
+            int bankTransfer = 0;
+            int cashOnDelivery = 0;
+
+            foreach (var order in orders)
+            {
+                if (order.payment_method.ToLower() == "cash")
+                {
+                    cashTotal+=order.total;
+                }
+                else if (order.payment_method.ToLower() == "credit card")
+                {
+                    creditCardTotal += order.total;
+                }
+                else if (order.payment_method.ToLower() == "bank transfer")
+                {
+                    bankTransfer += order.total;
+                }
+                else if (order.payment_method.ToLower() == "cash on delivery")
+                {
+                    cashOnDelivery += order.total;
+                }
+            }
+
+            Console.WriteLine($"Payments of each payment method:" +
+                                $"\ncash: {cashTotal}" +
+                                $"\ncredit card: {creditCardTotal}" +
+                                $"\nbank transfer: {bankTransfer}" +
+                                $"\ncash on delivery: {cashOnDelivery}");
         }
         public void AllOfShipping(List<Orders> orders)
         {
+            int foxpost = 0;
+            int glsCourier = 0;
+            int mpl = 0;
+            int storePickup = 0;
 
+            foreach (var order in orders)
+            {
+                if (order.shipping_method.ToLower() == "foxpost locker")
+                {
+                    foxpost += order.total;
+                }
+                else if (order.shipping_method.ToLower() == "gls courier")
+                {
+                    glsCourier += order.total;
+                }
+                else if (order.shipping_method.ToLower() == "mpl")
+                {
+                    mpl += order.total;
+                }
+                else if (order.shipping_method.ToLower() == "store pickup")
+                {
+                    storePickup += order.total;
+                }
+            }
+
+            Console.WriteLine($"Payments of each shipping method:" +
+                                $"\nFoxpost locker: {foxpost}" +
+                                $"\nGLS courier: {glsCourier}" +
+                                $"\nMPL: {mpl}" +
+                                $"\nStore pickup: {storePickup}");
         }
     }
 }

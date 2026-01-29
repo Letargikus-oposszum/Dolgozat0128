@@ -9,3 +9,5 @@ var summary = fileService.loadData().summary;
 
 fileService.MostSoldCustomer(orders,customers);
 fileService.MostSoldProduct(orders, parts);
+fileService.AllOfPayment(orders, summary);
+fileService.AllOfPayment(orders, summary);
